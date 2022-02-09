@@ -1,0 +1,355 @@
+@import 'variables.scss'; 
+@import 'mixin.scss'; 
+
+@media screen and (min-width: 1024px){
+    
+  
+  
+    body{
+    background-color: beige;
+  }
+    /* Parte superior header */
+
+    header{
+       height: 27vh;
+       background: rgb(238,167,0);
+       background: $color-bg;       
+       text-align: center;
+       position: sticky;
+       padding-bottom: 45px;
+
+       .img-1 {
+        width: 200px;
+        border-top: 4px solid beige;
+        border-right: 4px solid beige;
+        border-bottom: 4px solid beige;
+        border-left: 4px solid beige;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        border-radius: 200px 200px 200px 200px;
+        -moz-border-radius: 200px 200px 200px 200px;
+        -webkit-border-radius: 200px 200px 200px 200px;
+        border: 4px solid #030303;
+        animation-duration: 3s;
+        animation-name: foto;
+
+        @keyframes foto {
+            from {
+                transform: translateX(-220%)
+              }
+              to {
+                transform: translateX(0);
+              }
+
+    }
+}
+
+    .img-3 {
+        width: 200px;
+        border-top: 4px solid beige;
+        border-right: 4px solid beige;
+        border-bottom: 4px solid beige;
+        border-left: 4px solid beige;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        border-radius: 200px 200px 200px 200px;
+        -moz-border-radius: 200px 200px 200px 200px;
+        -webkit-border-radius: 200px 200px 200px 200px;
+        border: 4px solid #030303;
+        animation-duration: 3s;
+        animation-name: foto1;
+    }
+
+@keyframes foto1 {
+    from {
+        transform: translateX(220%)
+
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+       & h1{
+        padding-top: 11vh;
+        color: $color-text1;
+        font-size: 90px;
+        font-weight: lighter;
+        text-shadow: 7px 4px 5px black;
+        letter-spacing: 5px;
+        text-decoration-color: grey 5px 4px 5px 4px;
+        font-family: 'Bebas Neue', cursive;
+        overflow: hidden;
+        animation-duration: 3s;
+        animation-name: logo;
+        
+        @keyframes logo {
+            from {
+                transform: translateY(-100%)
+              }
+              to {
+                transform: translateX(0);
+              }
+
+              
+        }
+      
+       }
+    }
+   
+   
+   
+   nav{
+      background: rgb(238,167,0);
+      background: $color-bg;
+      padding-top: 25px;
+      padding-bottom: 25px;
+
+        ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: rgb(238,167,0);
+        background: $color-bg;
+        text-align: center;
+
+        li{
+            display: inline-flex;
+            text-transform: uppercase;
+            text-shadow: 7px 4px 5px blanchedalmond;
+            width: 22vh;
+            align-content: center;
+            a{
+
+                color: $color-text1;
+                text-decoration: none;
+                text-shadow:  8px 5px 4px rgb(0, 0, 0);
+                font-family: 'Bebas Neue', cursive;
+                font-size: 35px;
+                transition: background-color .1s;
+
+
+                &:hover{
+                    background-color: rgba(0, 0, 0, 0.3);
+                    color: beige;
+                    transition: .9s;
+                 }
+             }
+         }
+     }    
+   }
+   
+ 
+        
+   
+  
+   
+    main{
+        background-color: beige;
+        
+
+        h2 {
+            text-align: center;
+            font-size: 350%;
+            color: $color-text1;
+            background: rgb(238,167,0);
+            background: radial-gradient(circle, rgba(238,167,0,0.9867297260701156) 0%, rgba(166,166,166,1) 20%, rgba(236,198,101,1) 47%, rgba(154,154,152,1) 78%, rgba(238,192,38,1) 100%);
+            padding-top: 40px;
+            padding-bottom: 40px;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 15px;
+            border: 15px solid rgb(255, 255, 255);
+            text-shadow: 7px 4px 5px rgb(0, 0, 0) ;
+            }
+
+        p{
+                font-size: 40px;
+                font-weight: 20px;
+                font-family: 'Bebas Neue', cursive;
+        }
+
+        .fotoTexto{
+            width: 100%;
+        
+                img {
+                width: 300px;
+                margin-left: 18px;
+                float: left;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                border: solid 20px;
+                }
+                
+        }
+            
+        #texto p{
+            color: $color-text2;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 35px;
+            text-align: justify;
+            padding-right: 20px;
+        }
+        
+        #invitacion {
+            font-family: 'Bebas Neue', cursive;
+            text-shadow: 10px 9px 9px darkorange;
+            font-size: 50px;
+            text-align: center;
+
+        }
+        
+        
+    }
+   
+    
+    
+
+    
+   #footer{
+    position:relative;
+    text-align: center;    
+    background: rgb(238,167,0);
+    background: radial-gradient(circle, rgba(238,167,0,0.9867297260701156) 0%, rgba(236,198,101,1) 47%, rgba(238,192,38,1) 100%);
+   
+    h3{
+     padding-bottom: 25px;
+     color: $color-text2;
+     
+    }
+        #Insta{
+        cursor: hand;
+
+            &:hover {filter: opacity(.3);
+            }
+        }
+
+    #mail{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    
+   }
+
+
+ }
+
+
+    /* Comienza la parte de galeria HTML */
+
+    #fondoFotos{
+        display: grid;
+        height: 900px;
+        grid-template-columns: 23% 23% 23% 23%;
+        grid-template-rows: 45% 45%;
+        grid-template-areas:"foto1 foto2 foto3 foto4"
+                            "foto5 foto6 foto7 foto8";
+        background-color: beige;
+        justify-items: center;
+        align-content: space-around;
+        justify-content: center;
+        column-gap: 2px;
+            
+        img:hover {-webkit-transform:scale(1.0);transform:scale(1.2);}
+        img:hover {transition-duration: 2s;}
+
+           img{
+            width: 100%;
+            height: 100%;
+            justify-items: center;
+            box-shadow: chocolate -3px 3px 5px 4px;
+
+           
+       .fotosdegaleria1 img{
+            grid-area: foto1;
+            
+        }
+        
+        .fotosdegaleria2 img{
+            grid-area: foto2;
+        }
+    
+        .fotosdegaleria3 img{
+            grid-area: foto3;
+            }
+    
+        .fotosdegaleria4 img{
+            grid-area: foto4;
+            }
+    
+        .fotosdegaleria5 img{
+            grid-area: foto5;
+            }
+        .fotosdegaleria6 img{
+            grid-area: foto6;
+            }
+        .fotosdegaleria7 img{
+            grid-area: foto7;
+            }
+                                
+        .fotosdegaleria8 img{
+            grid-area: foto8;
+        }
+       
+                          
+    
+        .fotosdegaleria {overflow:hidden;}
+    }
+}
+
+   
+    
+
+    .tituloCuarto{
+        @include letraColor(rgb(255, 255, 255), rgb(3, 3, 3), 'Bebas Neue', center);
+    }
+
+    .instructores1{
+        @include letraColor(rgb(0, 0, 0), rgb(98, 181, 161), 'Bebas Neue', center);
+
+    }
+    
+    .instructores2{
+        @include letraColor(rgb(103, 174, 162), rgb(111, 89, 54), 'Bebas Neue', center);
+    
+    }
+    .instructores3{
+        @include letraColor(grey, rgb(255, 255, 255), 'Bebas Neue', center);
+    
+}
+
+$color: #bada55;
+$grey: #ddd;
+$bad: #991010;
+$small: 1rem;
+$med: 1.5rem;
+$lg: 2.0rem;
+$serif: 'Times New Roman', Palatino, serif;
+$sans: Arial, Helvetica, sans-serif;
+// SASS @extend
+.warn{
+    color: $bad;
+    font-size: $med;
+}
+.error{
+    @extend .warn;
+    background-color: lighten($bad, 40%);
+}
+.criticalError{
+    @extend .error;
+    border-top: 2px solid $bad;
+    border-bottom: 2px solid $bad;
+    font-size: $lg;
+}
+a{
+  color: $color;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+.link{
+  font-size: $lg;
+  border: 1px solid pink;
+  @extend a
+}
+}

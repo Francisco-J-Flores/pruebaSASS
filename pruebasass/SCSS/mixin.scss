@@ -1,0 +1,12 @@
+// mixin.scss
+
+@mixin letraColor ($colores, $fondoColor, $fuente, $ubicacion){
+    color: $colores;
+    background-color: $fondoColor;
+    text-align: $ubicacion;
+    font-family: $fuente;
+    list-style: none;
+    font-size: 150%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
